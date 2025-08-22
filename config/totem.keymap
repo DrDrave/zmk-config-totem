@@ -23,10 +23,10 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <120>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <270>;
+    tapping-term-ms = <180>;
 };
 
 / {
@@ -189,10 +189,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &kp LANGUAGE_9  &kp LANGUAGE_6  &none  &none  &none
+       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &kp LANGUAGE_8  &kp LANG5       &none  &none  &none
+&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &kp LANG7       &kp LANG1       &none  &none  &none  &none
+                              &trans        &kp LC(F14)  &kp LC(F13)    &none           &none           &none
             >;
         };
 
